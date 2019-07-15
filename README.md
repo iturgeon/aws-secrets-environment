@@ -8,7 +8,9 @@ A Node module to easily load [AWS Secrets Manager](https://aws.amazon.com/secret
 
 ## Install
 
-`yarn install aws-secrets-environment`
+```bash
+yarn install aws-secrets-environment
+```
 
 ## Usage
 
@@ -29,7 +31,7 @@ const loadAWSJSONSecretsIntoENV = require('aws-secrets-environment')
 const region = 'us-east-1'
 const secretName = 'MyApplicationDevSecrets'
 
-// set an env var before loading? it won't get overridden
+// set an env var before loading? it won't be overridden
 process.env.DB_PASS = 'secret-from-code'
 
 loadAWSJSONSecretsIntoENV(region, secretName, console.log)
