@@ -6,6 +6,10 @@ A Node module to easily load [AWS Secrets Manager](https://aws.amazon.com/secret
 * Existing process.env variables will **not** be overwritten.
 * If the value of said key is 'true' or 'false', it will be converted to a boolean
 
+## Install
+
+`yarn install aws-secrets-environment`
+
 ## Usage
 
 With these secrets stored in AWS Secrets Manager as `MyApplicationDevSecrets`:
