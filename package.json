@@ -1,0 +1,13 @@
+{
+  "name": "aws-secrets-environment",
+  "version": "1.0.0",
+  "description": "Load AWS Secrets Manager parameters into your application's process.env",
+  "main": "index.js",
+  "repository": "https://github.com/iturgeon/aws-secrets-environment.git",
+  "author": "Ian Turgeon <iturgeon@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "aws-sdk": "^2.493.0"
+  }
+}
