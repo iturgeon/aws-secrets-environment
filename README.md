@@ -38,7 +38,9 @@ loadAWSJSONSecretsIntoENV(region, secretName, console.log)
 
 ### Arguments
 
-`loadAWSJSONSecretsIntoENV('us-east-1', 'mySecret', logger.info)`
+```javascript
+loadAWSJSONSecretsIntoENV('us-east-1', 'mySecret', logger.info)
+```
 
 1. string [AWS Region](https://docs.aws.amazon.com/general/latest/gr/rande.html)
 2. string Name of Secret Manager Secret (select "Other type of secrets" when creating)
@@ -46,4 +48,4 @@ loadAWSJSONSecretsIntoENV(region, secretName, console.log)
 
 ### Return
 
-loadAWSJSONSecretsIntoENV returns a Promise. Once it resolves the secrets are available on process.env.
+Returns a Promise. Once it resolves the secrets are available on process.env.
